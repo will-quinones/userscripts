@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Tatoeba - Flashcards (Sentence Mining)
 // @namespace    https://tatoeba.org/
-// @version      5.21
+// @version      5.22
 // @description  Flashcards tipo Anki sobre la búsqueda filtrada de Tatoeba (mobile + teclado)
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tatoeba.org
 // @match        https://tatoeba.org/*/sentences/search*
-// @homepageURL  https://github.com/willcas36/userscripts/tree/main/tatoeba-flashcards
-// @updateURL    https://raw.githubusercontent.com/willcas36/userscripts/main/tatoeba-flashcards/tatoeba-flashcards.user.js
-// @downloadURL  https://raw.githubusercontent.com/willcas36/userscripts/main/tatoeba-flashcards/tatoeba-flashcards.user.js
+// @homepageURL  https://github.com/will-quinones/userscripts/tree/main/tatoeba-flashcards
+// @updateURL    https://raw.githubusercontent.com/will-quinones/userscripts/main/tatoeba-flashcards/tatoeba-flashcards.user.js
+// @downloadURL  https://raw.githubusercontent.com/will-quinones/userscripts/main/tatoeba-flashcards/tatoeba-flashcards.user.js
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_deleteValue

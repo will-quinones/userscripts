@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Instagram Reels — Unmute & Play
 // @namespace    https://github.com/willcas36/userscripts
-// @version      1.0.0
+// @version      1.0.1
 // @description  Al hacer click en un reel de Instagram, le saca el silencio y lo reproduce.
-// @author       willcas36
+// @author       will-quinones
 // @match        https://www.instagram.com/reel/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=instagram.com
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/willcas36/userscripts/main/instagram-reels/instagram-reels.user.js
-// @downloadURL  https://raw.githubusercontent.com/willcas36/userscripts/main/instagram-reels/instagram-reels.user.js
+// @updateURL    https://raw.githubusercontent.com/will-quinones/userscripts/main/instagram-reels/instagram-reels.user.js
+// @downloadURL  https://raw.githubusercontent.com/will-quinones/userscripts/main/instagram-reels/instagram-reels.user.js
 // ==/UserScript==
 
 (function () {

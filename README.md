@@ -21,7 +21,7 @@ auto-updates every device once installed.
 Raw URL pattern:
 
 ```
-https://raw.githubusercontent.com/willcas36/userscripts/main/<folder>/<folder>.user.js
+https://raw.githubusercontent.com/will-quinones/userscripts/main/<folder>/<folder>.user.js
 ```
 
 ## Publishing changes

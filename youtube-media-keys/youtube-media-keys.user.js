@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         YouTube — Media Key Controls
 // @namespace    https://github.com/willcas36/userscripts
-// @version      1.0.0
+// @version      1.0.1
 // @description  Controla el video de YouTube con las teclas multimedia: anterior/siguiente retroceden/avanzan 5s, play/pause togglean. Reaplica los handlers porque YouTube los pisa.
-// @author       willcas36
+// @author       will-quinones
 // @match        https://www.youtube.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/willcas36/userscripts/main/youtube-media-keys/youtube-media-keys.user.js
-// @downloadURL  https://raw.githubusercontent.com/willcas36/userscripts/main/youtube-media-keys/youtube-media-keys.user.js
+// @updateURL    https://raw.githubusercontent.com/will-quinones/userscripts/main/youtube-media-keys/youtube-media-keys.user.js
+// @downloadURL  https://raw.githubusercontent.com/will-quinones/userscripts/main/youtube-media-keys/youtube-media-keys.user.js
 // ==/UserScript==
 
 (function () {

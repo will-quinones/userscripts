@@ -116,5 +116,5 @@ fi
 git commit -q -m "release($NAME): v${VER}"
 git push -q origin main
 echo "Published $NAME v${VER}"
-echo "  -> https://raw.githubusercontent.com/willcas36/userscripts/main/$NAME/$NAME.user.js"
+echo "  -> https://raw.githubusercontent.com/will-quinones/userscripts/main/$NAME/$NAME.user.js"
 echo "Tampermonkey picks it up on its next update check (devices installed from the raw URL)."
