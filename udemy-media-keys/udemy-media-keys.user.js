@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Udemy — Media Key Controls
 // @namespace    https://github.com/willcas36/userscripts
-// @version      1.0.0
-// @description  Controla el video de Udemy con las teclas multimedia: anterior/siguiente retroceden/avanzan 5s, play/pause togglean.
+// @version      1.0.1
+// @description  Controla el video de Udemy con las teclas multimedia: anterior/siguiente retroceden/avanzan 5s y play/pause controlan la reproducción.
 // @author       willcas36
 // @match        https://www.udemy.com/course/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=udemy.com
@@ -24,17 +24,25 @@
     if (v) v.currentTime += 5;
   }
 
-  function playOrPause() {
-    const el = document.querySelector(
-      '[data-purpose="pause-button"], [data-purpose="play-button"]',
-    );
-    if (el) el.click(); // guard: el botón puede no existir todavía
+  if (!('mediaSession' in navigator)) return;
+
+  function play() {
+    const v = document.querySelector('video');
+    if (v) v.play().catch(() => {});
   }
 
-  if ('mediaSession' in navigator) {
+  function pause() {
+    const v = document.querySelector('video');
+    if (v) v.pause();
+  }
+
+  function setMediaSessionHandlers() {
     navigator.mediaSession.setActionHandler('previoustrack', rewind);
     navigator.mediaSession.setActionHandler('nexttrack', forward);
-    navigator.mediaSession.setActionHandler('play', playOrPause);
-    navigator.mediaSession.setActionHandler('pause', playOrPause);
+    navigator.mediaSession.setActionHandler('play', play);
+    navigator.mediaSession.setActionHandler('pause', pause);
   }
+
+  setMediaSessionHandlers();
+  setInterval(setMediaSessionHandlers, 1000);
 })();
